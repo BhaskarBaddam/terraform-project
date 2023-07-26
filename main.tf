@@ -103,11 +103,3 @@ description = "*"
 type = set(string)
 default = ["user1", "user2", "user3", "user4"]
 }
-
-resource "aws_ebs_volume" "eight" {
- availability_zone = "us-east-1a"
-  size = 40
-  tags = {
-    Name = "ebs-001"
-  }
-}
